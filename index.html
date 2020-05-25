@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Trabalho Prático</title>
+  </head>
+  <body>
+    <div class="content">
+      <table>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>
+              <p id="labelRed">(R) RED:</p>
+            </td>
+            <td>
+              <input
+                id="red"
+                type="range"
+                step="1"
+                min="0"
+                max="255"
+                value="0"
+              />
+            </td>
+            <td>
+              <input id="redValue" type="text" disabled value="0" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="labelGreen">(G) GREEN:</p>
+            </td>
+            <td>
+              <input
+                id="green"
+                type="range"
+                step="1"
+                min="0"
+                max="255"
+                value="0"
+              />
+            </td>
+            <td>
+              <input id="greenValue" type="text" disabled value="0" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="labelBlue">(B) BLUE:</p>
+            </td>
+            <td>
+              <input
+                id="blue"
+                type="range"
+                step="1"
+                min="0"
+                max="255"
+                value="0"
+              />
+            </td>
+            <td>
+              <input id="blueValue" type="text" disabled value="0" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="color"></div>
+    </div>
+    <p><span id="hex">HEX: #000000</span></p>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
